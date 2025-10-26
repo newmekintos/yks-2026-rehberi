@@ -1,0 +1,143 @@
+{
+  "name": "2026 YKS Kapsamlı Rehberi",
+  "short_name": "YKS 2026",
+  "description": "2026 YKS'ye hazırlanan öğrenciler için kapsamlı rehber. TYT, AYT, YDT konuları, puan hesaplama, başvuru süreci ve stratejiler.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "tr",
+  "dir": "ltr",
+  "categories": ["education", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/desktop-screenshot.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "2026 YKS Rehberi - Masaüstü Görünümü"
+    },
+    {
+      "src": "screenshots/mobile-screenshot.png",
+      "sizes": "375x667",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "2026 YKS Rehberi - Mobil Görünümü"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Sınav Takvimi",
+      "short_name": "Takvim",
+      "description": "2026 YKS sınav tarihleri ve önemli günler",
+      "url": "/#takvim",
+      "icons": [
+        {
+          "src": "icons/shortcut-calendar.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Puan Hesaplama",
+      "short_name": "Hesaplama",
+      "description": "TYT, AYT ve YDT puan hesaplama araçları",
+      "url": "/#puan",
+      "icons": [
+        {
+          "src": "icons/shortcut-calculator.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Konu Dağılımı",
+      "short_name": "Konular",
+      "description": "TYT, AYT ve YDT konu dağılımları",
+      "url": "/#konular",
+      "icons": [
+        {
+          "src": "icons/shortcut-topics.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Sıkça Sorulan Sorular",
+      "short_name": "SSS",
+      "description": "YKS hakkında sıkça sorulan sorular",
+      "url": "/#sss",
+      "icons": [
+        {
+          "src": "icons/shortcut-faq.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://www.osym.gov.tr"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}
