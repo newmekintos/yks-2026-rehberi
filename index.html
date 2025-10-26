@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 YKS Kapsamlı Rehberi - A'dan Z'ye Her Şey</title>
+    <meta name="description" content="2026 YKS'ye hazırlanan öğrenciler için kapsamlı rehber. TYT, AYT, YDT konuları, puan hesaplama, başvuru süreci ve stratejiler.">
+    <meta name="keywords" content="2026 YKS, TYT, AYT, YDT, üniversite sınavı, puan hesaplama, konu dağılımı">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="2026 YKS Rehberi">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">2026 YKS Rehberi</h1>
+                <nav class="nav">
+                    <a href="#takvim" class="nav-link">Takvim</a>
+                    <a href="#yapisi" class="nav-link">Sınav Yapısı</a>
+                    <a href="#konular" class="nav-link">Konular</a>
+                    <a href="#puan" class="nav-link">Puan Hesaplama</a>
+                    <a href="#basvuru" class="nav-link">Başvuru</a>
+                    <a href="#sss" class="nav-link">SSS</a>
+                    <a href="#stratejiler" class="nav-link">Stratejiler</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">2026 YKS (Yükseköğretim Kurumları Sınavı) Kapsamlı Rehberi</h1>
+                <p class="hero-subtitle">2026 YKS maratonuna hoş geldiniz. Bu sayfada, sınavla ilgili bilmeniz gereken en güncel ve en doğru bilgileri, başvuru tarihlerinden konu dağılımlarına, puan hesaplamadan stratejilere kadar her şeyi tek bir yerde bulacaksınız.</p>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <h3>Sınava Kalan Süre</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">000</span>
+                            <span class="countdown-label">Gün</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Saat</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Dakika</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Saniye</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            
+            <!-- Takvim Section -->
+            <section id="takvim" class="section">
+                <h2>2026 YKS Takvimi: Kritik Tarihleri Kaçırmayın</h2>
+                <div class="warning-box">
+                    <p><strong>Önemli:</strong> Aşağıdaki tarihler geçmiş yıllara (2024, 2025) göre tahmini olarak belirtilmiştir. ÖSYM'nin resmi açıklaması esas alınacaktır.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>2026 YKS Başvuru Dönemi</h3>
+                        <div class="timeline-content">
+                            <p><strong>Tahmini Tarih:</strong> [ÖSYM AÇIKLAMASI BEKLENİYOR - Genellikle Şubat-Mart aylarında]</p>
+                            <p><strong>Geç Başvuru Günü:</strong> [ÖSYM AÇIKLAMASI BEKLENİYOR - Genellikle Mart ayının son haftası]</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>2026 YKS Sınav Tarihleri</h3>
+                        <div class="timeline-content">
+                            <div class="exam-schedule">
+                                <div class="exam-item">
+                                    <h4>1. Oturum: TYT (Temel Yeterlilik Testi)</h4>
+                                    <p><strong>Tarih:</strong> [ÖSYM AÇIKLAMASI BEKLENİYOR - Genellikle Haziran ayının 2. veya 3. Cumartesi günü, sabah]</p>
+                                </div>
+                                <div class="exam-item">
+                                    <h4>2. Oturum: AYT (Alan Yeterlilik Testleri)</h4>
+                                    <p><strong>Tarih:</strong> [ÖSYM AÇIKLAMASI BEKLENİYOR - Genellikle Haziran ayının 2. veya 3. Pazar günü, sabah]</p>
+                                </div>
+                                <div class="exam-item">
+                                    <h4>3. Oturum: YDT (Yabancı Dil Testi)</h4>
+                                    <p><strong>Tarih:</strong> [ÖSYM AÇIKLAMASI BEKLENİYOR - Genellikle Haziran ayının 2. veya 3. Pazar günü, öğleden sonra]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>2026 YKS Sonuç Açıklanma Dönemi</h3>
+                        <div class="timeline-content">
+                            <p><strong>Tahmini Tarih:</strong> [ÖSYM AÇIKLAMASI BEKLENİYOR - Genellikle Temmuz ayının 3. veya 4. haftası]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sınav Yapısı Section -->
+            <section id="yapisi" class="section">
+                <h2>YKS Nedir? Sınavın Yapısı ve Oturumlar</h2>
+                
+                <div class="exam-structure">
+                    <div class="exam-card">
+                        <h3>1. Oturum: TYT (Temel Yeterlilik Testi)</h3>
+                        <div class="exam-details">
+                            <p><strong>Zorunluluk:</strong> Tüm adaylar için zorunludur.</p>
+                            <p><strong>Amacı:</strong> Temel mantıksal düşünme, akıl yürütme, değerlendirme ve problem çözme becerilerini ölçer.</p>
+                            <p><strong>Süre:</strong> 165 Dakika (2025 verisine göre, değişirse güncellenecek)</p>
+                            <p><strong>Baraj Puanı:</strong> Baraj puanı kaldırılmıştır, ancak TYT puanı AYT puanını etkiler ve ön lisans/özel yetenek tercihi için önemlidir.</p>
+                        </div>
+                    </div>
+
+                    <div class="exam-card">
+                        <h3>2. Oturum: AYT (Alan Yeterlilik Testleri)</h3>
+                        <div class="exam-details">
+                            <p><strong>Amacı:</strong> Adayların lise müfredatındaki kendi alanlarına yönelik akademik bilgilerini ölçer. Lisans (4 yıllık) programları için temel belirleyicidir.</p>
+                            <p><strong>Süre:</strong> 180 Dakika (2025 verisine göre)</p>
+                        </div>
+                    </div>
+
+                    <div class="exam-card">
+                        <h3>3. Oturum: YDT (Yabancı Dil Testi)</h3>
+                        <div class="exam-details">
+                            <p><strong>Amacı:</strong> Dil puanı ile öğrenci alan programlara girmek isteyen adaylar içindir.</p>
+                            <p><strong>Diller:</strong> Almanca, Arapça, Fransızca, İngilizce, Rusça</p>
+                            <p><strong>Süre:</strong> 120 Dakika (2025 verisine göre)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alan Seçimi Section -->
+            <section class="section">
+                <h2>Alan Seçimi ve Puan Türleri (SAY, SÖZ, EA, DİL)</h2>
+                
+                <div class="field-selection">
+                    <div class="field-card">
+                        <h3>Sayısal (SAY) Puanı İçin:</h3>
+                        <ul>
+                            <li><strong>TYT:</strong> Tüm dersler</li>
+                            <li><strong>AYT:</strong> Matematik + Fen Bilimleri (Fizik, Kimya, Biyoloji)</li>
+                        </ul>
+                    </div>
+
+                    <div class="field-card">
+                        <h3>Eşit Ağırlık (EA) Puanı İçin:</h3>
+                        <ul>
+                            <li><strong>TYT:</strong> Tüm dersler</li>
+                            <li><strong>AYT:</strong> Matematik + Türk Dili ve Edebiyatı-Sosyal Bilimler-1 (Edebiyat, Tarih-1, Coğrafya-1)</li>
+                        </ul>
+                    </div>
+
+                    <div class="field-card">
+                        <h3>Sözel (SÖZ) Puanı İçin:</h3>
+                        <ul>
+                            <li><strong>TYT:</strong> Tüm dersler</li>
+                            <li><strong>AYT:</strong> Türk Dili ve Edebiyatı-Sosyal Bilimler-1 + Sosyal Bilimler-2 (Tarih-2, Coğrafya-2, Felsefe Grubu, Din Kültürü)</li>
+                        </ul>
+                    </div>
+
+                    <div class="field-card">
+                        <h3>Dil (DİL) Puanı İçin:</h3>
+                        <ul>
+                            <li><strong>TYT:</strong> Tüm dersler</li>
+                            <li><strong>YDT:</strong> Seçilen yabancı dilden 80 soru</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Konular Section -->
+            <section id="konular" class="section">
+                <h2>2026 YKS Konuları ve Soru Dağılımı</h2>
+                <div class="warning-box">
+                    <p><strong>Not:</strong> ÖSYM'nin 2026 için müfredatı henüz açıklanmamıştır. Aşağıdaki dağılımlar 2025 verilerine göre tahminidir.</p>
+                </div>
+
+                <div class="topics-container">
+                    <h3>TYT Konu ve Soru Dağılımı (Toplam 120 Soru)</h3>
+                    <div class="table-container">
+                        <table class="topics-table">
+                            <thead>
+                                <tr>
+                                    <th>Ders</th>
+                                    <th>Soru Sayısı</th>
+                                    <th>Tahmini Önemli Konular (2025'e göre)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Türkçe</td>
+                                    <td>40 Soru</td>
+                                    <td>Paragraf, Dil Bilgisi, Yazım Kuralları, Anlam Bilgisi, Sözcükte Anlam, Cümlede Anlam</td>
+                                </tr>
+                                <tr>
+                                    <td>Sosyal Bilimler</td>
+                                    <td>20 Soru</td>
+                                    <td>Tarih (5), Coğrafya (5), Felsefe (5), Din Kültürü (5)</td>
+                                </tr>
+                                <tr>
+                                    <td>Temel Matematik</td>
+                                    <td>40 Soru</td>
+                                    <td>Temel Kavramlar, Problemler, Geometri, Sayısal Mantık, Cebir</td>
+                                </tr>
+                                <tr>
+                                    <td>Fen Bilimleri</td>
+                                    <td>20 Soru</td>
+                                    <td>Fizik (7), Kimya (7), Biyoloji (6)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>AYT Konu ve Soru Dağılımı (Alanlara Göre)</h3>
+                    <div class="table-container">
+                        <table class="topics-table">
+                            <thead>
+                                <tr>
+                                    <th>Test</th>
+                                    <th>Soru Sayısı</th>
+                                    <th>Alanı</th>
+                                    <th>Tahmini Önemli Konular (2025'e göre)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Matematik</td>
+                                    <td>40 Soru</td>
+                                    <td>SAY, EA</td>
+                                    <td>Limit, Türev, İntegral, Trigonometri, Logaritma, Fonksiyonlar, Analitik Geometri</td>
+                                </tr>
+                                <tr>
+                                    <td>Fen Bilimleri</td>
+                                    <td>40 Soru</td>
+                                    <td>SAY</td>
+                                    <td>Fizik (14), Kimya (13), Biyoloji (13) - 11. ve 12. Sınıf ağırlıklı</td>
+                                </tr>
+                                <tr>
+                                    <td>Türk Dili ve Edb. - Sos-1</td>
+                                    <td>40 Soru</td>
+                                    <td>EA, SÖZ</td>
+                                    <td>Edebiyat (24), Tarih-1 (10), Coğrafya-1 (6)</td>
+                                </tr>
+                                <tr>
+                                    <td>Sosyal Bilimler-2</td>
+                                    <td>40 Soru</td>
+                                    <td>SÖZ</td>
+                                    <td>Tarih-2 (11), Coğrafya-2 (11), Felsefe Grubu (12), Din Kültürü (6)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>YDT Soru Dağılımı (Toplam 80 Soru)</h3>
+                    <div class="ydt-topics">
+                        <ul>
+                            <li>Kelime Bilgisi</li>
+                            <li>Dil Bilgisi</li>
+                            <li>Çeviri</li>
+                            <li>Paragraf</li>
+                            <li>Diyalog Tamamlama</li>
+                            <li>Anlam Bütünlüğünü Bozan Cümle</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Puan Hesaplama Section -->
+            <section id="puan" class="section">
+                <h2>2026 YKS Puan Hesaplama: Adım Adım Anlatım</h2>
+                
+                <div class="calculation-steps">
+                    <div class="step-card">
+                        <h3>1. Adım: Ham Puan (Net) Hesabı</h3>
+                        <div class="formula-box">
+                            <p><strong>Formül:</strong> (Toplam Doğru Sayısı) - (Toplam Yanlış Sayısı / 4) = Net Sayısı</p>
+                            <p><em>Her test için ayrı ayrı netler hesaplanır.</em></p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <h3>2. Adım: TYT Puanının Etkisi (%40)</h3>
+                        <div class="info-box">
+                            <p>Tüm puan türlerinde (SAY, SÖZ, EA, DİL) TYT'nin %40, AYT/YDT'nin %60 ağırlığa sahiptir.</p>
+                            <p><strong>Önemli:</strong> TYT puanı olmayan veya TYT'den belirli bir ham puanı geçemeyen adayın AYT/YDT puanı HESAPLANMAZ.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <h3>3. Adım: OBP (Ortaöğretim Başarı Puanı) Nasıl Eklenir?</h3>
+                        <div class="obp-explanation">
+                            <p><strong>OBP Nedir?</strong> Diploma notunun 5 ile çarpılması. Örn: 90 diploma notu = 450 OBP</p>
+                            <p><strong>Yerleştirme Puanına Etkisi:</strong> OBP'nin 0.12 katsayısı ile çarpılarak ham puana eklenir. Örn: 450 OBP × 0.12 = 54 Ek Puan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculation-examples">
+                    <h3>Örnek Puan Hesaplama Senaryoları</h3>
+                    
+                    <div class="example-card">
+                        <h4>Örnek 1: Eşit Ağırlık (EA) Adayı</h4>
+                        <div class="example-details">
+                            <p><strong>TYT Netleri:</strong> Türkçe: 30, Sosyal: 15, Mat: 25, Fen: 10</p>
+                            <p><strong>AYT Netleri:</strong> Mat: 30, Edebiyat: 20, Tarih-1: 8, Coğrafya-1: 5</p>
+                            <p><strong>OBP:</strong> 90</p>
+                            <div class="calculation-simulator">
+                                <button class="btn btn-primary" onclick="calculateEA()">Hesaplama Simülasyonu</button>
+                                <div id="eaResult" class="result-box"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card">
+                        <h4>Örnek 2: Sayısal (SAY) Adayı</h4>
+                        <div class="example-details">
+                            <p><strong>TYT Netleri:</strong> Türkçe: 25, Sosyal: 12, Mat: 35, Fen: 15</p>
+                            <p><strong>AYT Netleri:</strong> Mat: 35, Fizik: 10, Kimya: 10, Biyoloji: 8</p>
+                            <p><strong>OBP:</strong> 85</p>
+                            <div class="calculation-simulator">
+                                <button class="btn btn-primary" onclick="calculateSAY()">Hesaplama Simülasyonu</button>
+                                <div id="sayResult" class="result-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Başvuru Section -->
+            <section id="basvuru" class="section">
+                <h2>Başvuru Süreci: 2026 YKS'ye Nasıl Başvurulur?</h2>
+                
+                <div class="application-steps">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>ÖSYM Aday İşlemleri Sistemi (AİS)</h3>
+                            <p>Şifre edinme, fotoğraf güncelleme ve kişisel bilgilerin kontrolü</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Başvuru Formunun Doldurulması</h3>
+                            <p>Alan seçimi, oturum seçimi ve tercih edilen sınav merkezi belirleme</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Sınav Ücretinin Yatırılması</h3>
+                            <p>Anlaşmalı bankalar veya ÖSYM e-Ödemeler sistemi üzerinden ödeme</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Başvuru Kontrolü ve Onayı</h3>
+                            <p>Başvuru bilgilerinin son kontrolü ve onaylama işlemi</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SSS Section -->
+            <section id="sss" class="section">
+                <h2>Sıkça Sorulan Sorular (SSS)</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>TYT'ye girmek zorunlu mu?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Evet, TYT tüm adaylar için zorunludur. TYT puanı olmadan AYT veya YDT puanı hesaplanmaz.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Geçen sene TYT'ye girdim, puanımı kullanabilir miyim?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Hayır, YKS puanları sadece o yıl için geçerlidir. Her yıl yeniden sınava girmeniz gerekir.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>OBP'm kırılır mı? (Kırık OBP nedir, kimleri etkiler?)</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Kırık OBP, mezuniyet yılından sonraki yıllarda sınava giren adayların OBP'sinin 0.06 katsayısı ile çarpılmasıdır. Bu durum mezuniyet yılından 2 yıl sonra başlar.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Alanım dışında tercih yapabilir miyim?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Evet, istediğiniz puan türü ile tercih yapabilirsiniz. Ancak o puan türü için gerekli testleri çözmeniz gerekir.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Sınava nerede gireceğim?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sınav merkezi başvuru sırasında belirlenir. Genellikle ikamet ettiğiniz il veya yakın illerde sınava girersiniz.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Baraj puanı var mı?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>2022 yılından itibaren baraj puanı kaldırılmıştır. Ancak TYT puanı AYT puanını etkiler ve ön lisans programları için önemlidir.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stratejiler Section -->
+            <section id="stratejiler" class="section">
+                <h2>2026 YKS İçin Altın Değerinde Stratejiler</h2>
+                
+                <div class="strategies-container">
+                    <div class="strategy-card">
+                        <h3>TYT ve AYT Dengesi Nasıl Kurulmalı?</h3>
+                        <ul>
+                            <li>TYT temel oluşturur, AYT'de uzmanlaşma sağlar</li>
+                            <li>TYT'de %60, AYT'de %40 zaman ayırın</li>
+                            <li>Her iki sınav için de düzenli deneme çözün</li>
+                            <li>TYT'deki eksiklikler AYT'yi de etkiler</li>
+                        </ul>
+                    </div>
+
+                    <div class="strategy-card">
+                        <h3>Hangi Konulara Daha Çok Ağırlık Verilmeli?</h3>
+                        <ul>
+                            <li><strong>TYT:</strong> Paragraf, problemler, temel matematik</li>
+                            <li><strong>SAY:</strong> Matematik, fizik, kimya temel konuları</li>
+                            <li><strong>EA:</strong> Matematik, edebiyat, tarih</li>
+                            <li><strong>SÖZ:</strong> Edebiyat, tarih, coğrafya</li>
+                        </ul>
+                    </div>
+
+                    <div class="strategy-card">
+                        <h3>Deneme Sınavı Çözmenin Önemi</h3>
+                        <ul>
+                            <li>Haftada en az 2-3 deneme çözün</li>
+                            <li>Deneme sonuçlarını analiz edin</li>
+                            <li>Zaman yönetimi pratiği yapın</li>
+                            <li>Eksik konuları tespit edin</li>
+                        </ul>
+                    </div>
+
+                    <div class="strategy-card">
+                        <h3>Kaynak ve Materyal Seçimi</h3>
+                        <ul>
+                            <li>ÖSYM'nin yayınladığı örnek soruları inceleyin</li>
+                            <li>Güvenilir yayınevlerinin kaynaklarını tercih edin</li>
+                            <li>Konu anlatımlı + soru bankası kombinasyonu</li>
+                            <li>Online platformlardan faydalanın</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 YKS Rehberi. Tüm hakları saklıdır.</p>
+                <p><strong>Önemli:</strong> Bu site bilgilendirme amaçlıdır. Resmi bilgiler için <a href="https://www.osym.gov.tr" target="_blank">ÖSYM</a> web sitesini ziyaret ediniz.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
